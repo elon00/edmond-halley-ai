@@ -1,0 +1,55 @@
+{
+  "mcpServers": {
+    "edmond-halley-ai": {
+      "command": "cargo",
+      "args": [
+        "run",
+        "--release",
+        "--quiet"
+      ],
+      "env": {
+        "RUST_LOG": "info",
+        "TITAN_PROTOCOL": "HALLEY",
+        "TARGET_CHAIN": "Sui",
+        "FIPS_203_LEVEL": "ML-KEM-768",
+        "FIPS_204_LEVEL": "ML-DSA-65"
+      },
+      "tools": [
+        {
+          "name": "predict_halley_comet_perihelion",
+          "description": "Integrates 76-year orbital perturbations by Jupiter and Saturn for 1P/Halley",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "cycle_count": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "cycle_count"
+            ]
+          }
+        },
+        {
+          "name": "interpolate_isogonic_magnetic_chart",
+          "description": "Constructs geomagnetic lines of equal magnetic variation across Atlantic shipping routes",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "lat": {
+                "type": "number"
+              },
+              "lon": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "lat",
+              "lon"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
