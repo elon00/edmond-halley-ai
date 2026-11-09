@@ -1,56 +1,5 @@
 {
-  "engine": "REA_Reverse_Engineer_Anything",
-  "status": "STRUCTURE_RECONSTRUCTED",
-  "analyzed_files": 16,
-  "manifest": {
-    "ARCHITECTURE_BOOK.md": {
-      "bytes": 2975
-    },
-    "Cargo.toml": {
-      "bytes": 93
-    },
-    "index.html": {
-      "bytes": 16829
-    },
-    "mcp.json": {
-      "bytes": 1408
-    },
-    "Move.toml": {
-      "bytes": 256
-    },
-    "README.md": {
-      "bytes": 1888
-    },
-    "WHITEPAPER.md": {
-      "bytes": 1203
-    },
-    "reports\\RAVEN_RSI_DIAGNOSTIC.json": {
-      "bytes": 340
-    },
-    "reports\\REA_ANALYSIS.json": {
-      "bytes": 999
-    },
-    "scripts\\rea_inspector.py": {
-      "bytes": 1485
-    },
-    "scripts\\rsi_engine.py": {
-      "bytes": 2039
-    },
-    "sources\\launchpad_token.move": {
-      "bytes": 1924
-    },
-    "src\\main.rs": {
-      "bytes": 1009
-    },
-    "tests\\reality_check_harness.py": {
-      "bytes": 1250
-    },
-    ".github\\workflows\\ci-cd-pipeline.yml": {
-      "bytes": 750
-    },
-    ".github\\workflows\\qmoosa-rsi-rea-sync.yml": {
-      "bytes": 531
-    }
-  },
-  "timestamp": 1794222798
+  "engine": "REA_Inspector",
+  "timestamp": 1794240704,
+  "total_files": 17
 }
